@@ -78,13 +78,15 @@
   </div>
     <div class="row">      
       <div class="twelve column full-width-banner mission-statement">
-        <div class="controller" id="mission-controller">
-        </div>
+<!--         <div class="controller" id="mission-controller">
+        </div> -->
         <div>
           <h3 class="message-banner-header">Mission Statement
           </h3>
           <hr></hr>
-          <p><i class="fa fa-chevron-down"></i></p>
+          <p>
+            <i class="fa fa-chevron-down"></i>
+          </p>
           <p class="statement">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
           </p>
@@ -95,20 +97,20 @@
       <div class="row">
         <div class="four columns icon" id="chat">
           <div>
-            <img src="/images/chat.png">
+            <p><i class="fa fa-tablet fa-5x front-page-icon"></i></p>
             <p class="helper">
               Always available to chat
             </p>
           </div>
         </div>        
           <div class="four columns icon">
-            <img src="/images/mobile.png">
+            <p><i class="fa fa-desktop fa-5x front-page-icon"></i></p>
             <p class="helper">
               Responsive Design
             </p>        
         </div>
         <div class="four columns icon">
-            <img src="/images/clock.png">
+            <p><i class="fa fa-mobile-phone fa-5x front-page-icon"></i></p>
             <p class="helper">
               All Projects done in a timely manner
             </p>          
@@ -118,14 +120,52 @@
     <div class="row">      
       <div class="u-full-width column full-width-banner testimonial">
         <div>
-          <h3 class="message-banner-header">Testimonials
+          <h3 class="message-banner-header">Contact Us
           </h3>
           <hr></hr>
-          <p class="statement">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+          <p>
+            <i class="fa fa-chevron-down"></i>
           </p>
+          <!-- <p class="statement">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+          </p> -->
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="hero-container full-width-banner">     
+        <div class="form-container">
+          <div id="contact-form" class="clearfix">
+            <ul id="errors" class="">
+                <li id="info">There were some problems with your form submission:</li>
+            </ul>
+            <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+            <form method="post" action="">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" /></br>
+                 
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" /></br>
+                 
+                <label for="telephone">Telephone: </label>
+                <input type="tel" id="telephone" name="telephone" value="" /></br>
+                 
+                <label for="enquiry">Enquiry: </label>
+                <select id="enquiry" name="enquiry">
+                    <option value="general">General</option>
+                    <option value="web_development">Web Development</option>
+                    <option value="support">Support</option>
+                </select></br>
+                 
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea></br>
+                 
+                <span id="loading"></span>
+                <input type="submit" value="Send" id="submit-button" />
+                <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+            </form>
+          </div>
+        </div>
     </div>
   <div class="hero container">
     <div class="row collapse">
