@@ -16,14 +16,16 @@
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/menu_style.css">
   <link rel="stylesheet" href="css/project_style.css">
-
+  <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
 
   <!-- Load our JavaScript
   -------------------------------------------------- -->
@@ -69,17 +71,20 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Customers</a></li>
-        <li><a href="#">Contact</a></li>  
+        <li><a href="/contact.html">Contact</a></li>  
       </ul>
       <a href="#" id="pull">Menu</a>
     </nav>
   </div>
     <div class="row">      
       <div class="twelve column full-width-banner mission-statement">
+        <div class="controller" id="mission-controller">
+        </div>
         <div>
           <h3 class="message-banner-header">Mission Statement
           </h3>
           <hr></hr>
+          <p><i class="fa fa-chevron-down"></i></p>
           <p class="statement">
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
           </p>
@@ -149,13 +154,33 @@
   <div class="row">
     <div class="footer u-full-width column">
       <div class="four columns">
-        <a href="#">Contact</a>
+        <ul id="footer-list">
+          <li>
+            <a>Education</a>
+          </li>
+          <li>
+            <a>Experience</a>
+          </li>
+          <li>
+            <a>Interests</a>
+          </li>
+          <li>
+            <a>Hobbies</a>
+          </li>
+        </ul>
       </div>
       <div class="four columns">
         <p>Andrew Goguen &copy;</p>
       </div>
       <div class="four columns">
-        <a href="#">Get Quote</a>
+        <div class="contact_form">
+          <h5>Contact Me</h5>
+          <label for="name">Name :</label>
+          <input type="textfield" required id="name"></input></br>
+          <label for="email">Email :</label>
+          <input type="textfield" required id="email"></input></br>
+          <input type="Submit"></input>
+        </div>
       </div>
     </div>
   </div>

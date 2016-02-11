@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Some Cool Name</title>
+  <meta name="description" content="">
+  <meta name="author" content="Andrew Goguen">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/menu_style.css">
+  <link rel="stylesheet" href="css/project_style.css">
+
+
+  <!-- Load our JavaScript
+  -------------------------------------------------- -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/ag_home.js"></script>
+  <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+  <div class="row">
+    <div class="header u-full-width column">
+      <div class="logo-container">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <nav class="clearfix">
+      <ul class="clearfix">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Contact</a></li>  
+      </ul>
+      <a href="#" id="pull">Menu</a>
+    </nav>
+  </div>
+    <div class="row">      
+      <div class="twelve column full-width-banner mission-statement">
+        <div>
+          <h3 class="message-banner-header">Contact Me
+          </h3>
+          <hr></hr>
+          <p class="statement">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">     
+        <div class="form-container">
+          <div id="contact-form" class="clearfix">
+            <h1>Get In Touch!</h1>
+            <h2>Fill out our super swanky HTML5 contact form below to get in touch with us! Please provide as much information as possible for us to help you with your enquiry :)</h2>
+            <ul id="errors" class="">
+                <li id="info">There were some problems with your form submission:</li>
+            </ul>
+            <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+            <form method="post" action="">
+                <label for="name">Name: <span class="required">*</span></label>
+                <input type="text" id="name" name="name" value="" placeholder="John Doe" required="required" autofocus="autofocus" /></br>
+                 
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" /></br>
+                 
+                <label for="telephone">Telephone: </label>
+                <input type="tel" id="telephone" name="telephone" value="" /></br>
+                 
+                <label for="enquiry">Enquiry: </label>
+                <select id="enquiry" name="enquiry">
+                    <option value="general">General</option>
+                    <option value="web_development">Web Development</option>
+                    <option value="support">Support</option>
+                </select></br>
+                 
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea id="message" name="message" placeholder="Your message must be greater than 20 charcters" required="required" data-minlength="20"></textarea></br>
+                 
+                <span id="loading"></span>
+                <input type="submit" value="Send" id="submit-button" />
+                <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="footer u-full-width column">
+      <div class="four columns">
+        <ul>
+          <li>
+            <a>Education</a>
+          </li>
+          <li>
+            <a>Experience</a>
+          </li>
+          <li>
+            <a>Interests</a>
+          </li>
+          <li>
+            <a>Hobbies</a>
+          </li>
+        </ul>
+      </div>
+      <div class="four columns">
+        <p>Andrew Goguen &copy;</p>
+      </div>
+      <div class="four columns">
+        <div class="contact_form">
+          <h5>Contact Me</h5>
+          <label for="name">Name :</label>
+          <input type="textfield" required id="name"></input></br>
+          <label for="email">Email :</label>
+          <input type="textfield" required id="email"></input></br>
+          <input type="Submit"></input>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--   <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div> -->
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
